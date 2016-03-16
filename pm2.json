@@ -1,11 +1,11 @@
 {
   "apps": [{
-    "name": "project_path",
+    "name": "p2pspider-manager",
     "script": "www/production.js",
-    "cwd": "/Users/zhangqinghong/develop/gitProject/p2pspider-manager/project_path",
+    "cwd": "./",
     "exec_mode": "cluster",
     "instances": 0,
-    "max_memory_restart": "1G",
+    "max_memory_restart": "600M",
     "autorestart": true,
     "node_args": [],
     "args": [],

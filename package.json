@@ -1,6 +1,6 @@
 {
-  "name": "thinkjs-application",
-  "description": "application created by thinkjs",
+  "name": "p2pspider-manager",
+  "description": "p2pspider-manager",
   "version": "1.0.0",
   "scripts": {
     "start": "node www/development.js",
@@ -11,7 +11,9 @@
   },
   "dependencies": {
     "thinkjs": "2.1.x",
-    "babel-runtime": "6.x.x"
+    "babel-runtime": "6.x.x",
+    "bencode": "^0.7.0",
+    "bitfield": "^1.1.2"
   },
   "devDependencies": {
     "babel-cli": "6.x.x",
