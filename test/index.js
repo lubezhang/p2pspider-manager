@@ -41,23 +41,23 @@ var getHttp = function(options){
   })
 }
 
-describe('unit test', function(){
-  it('test controller', function(done){
-    getHttp().then(function(http){
+describe('unit test', function() {
+  it('test controller', function(done) {
+    getHttp().then(function(http) {
       var instance = think.controller('index', http, 'home');
-      /**
-       * instance.xxx().then(function(){
-       *   //done();
-       * })
-       */
-      done();
+
+      instance.listAction().then(function() {
+        done();
+      })
+
+      // done();
     })
   })
 
-  it('test model', function(done){
+  it('test model', function(done) {
     var dbConfig = think.config('db');
     //get model instance
-    var instance = think.model('user', dbConfig, 'home');
+    var instance = think.model('torrent_source', dbConfig, 'home');
     /**
      * instance.xxx().then(function(data){
      *   assert.deepEqual(data, {});

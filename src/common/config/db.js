@@ -9,12 +9,12 @@ export default {
   log_connect: true,
   adapter: {
     mysql: {
-      host: '127.0.0.1',
-      port: '',
-      database: '',
-      user: '',
-      password: '',
-      prefix: 'think_',
+      host: '10.16.93.35',
+      port: '3306',
+      database: 'torrent',
+      user: 'root',
+      password: 'qwe123',
+      prefix: '',
       encoding: 'utf8'
     },
     mongo: {
